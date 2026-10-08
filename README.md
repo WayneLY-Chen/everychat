@@ -2,17 +2,24 @@
 
 **Search every AI conversation you've ever had.** ChatGPT, Claude, Gemini, Claude Code and Codex, in one local index. Free, offline, and your coding agent can query it over MCP.
 
+[![PyPI](https://img.shields.io/pypi/v/everychat?color=3fb950)](https://pypi.org/project/everychat/)
+[![CI](https://github.com/WayneLY-Chen/everychat/actions/workflows/ci.yml/badge.svg)](https://github.com/WayneLY-Chen/everychat/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/pypi/pyversions/everychat)](https://pypi.org/project/everychat/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
+<p align="center">
+  <img src="docs/demo.svg" alt="Terminal demo: everychat sync indexes local sessions, everychat search finds a timezone bug across ChatGPT, Claude Code and Claude, then Claude Code answers from that history over MCP" width="760">
+</p>
+
+You have asked an AI the same question three times across three products. everychat makes the first answer findable, and lets your agent find it too.
+
+```bash
+uv tool install everychat
+everychat sync                                   # index Claude Code + Codex sessions on this machine
+everychat import ~/Downloads/chatgpt-export.zip  # add your ChatGPT / Claude.ai / Gemini exports
+everychat search "timezone bug"
+claude mcp add everychat -- everychat mcp        # give Claude Code access to all of it
 ```
-$ everychat search "sourdough starter"
-
-[412] chatgpt · 2024-07-01 · Sourdough starter help
-      assistant: …Not dead, just hungry. Feed it twice a day for three days. [sourdough starter] that smells like acetone…
-
-[88] claude-code · 2026-03-02 · Bakery timer app
-      user: …wire the [sourdough starter] schedule into the notification…
-```
-
-You have asked an AI the same question three times across three products. everychat makes the first answer findable.
 
 ## Why
 
