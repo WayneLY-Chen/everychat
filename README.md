@@ -1,5 +1,7 @@
 # everychat
 
+English | [繁體中文](README.zh-TW.md)
+
 **Search every AI conversation you've ever had.** ChatGPT, Claude, Gemini, Claude Code and Codex, in one local index. Free, offline, and your coding agent can query it over MCP.
 
 [![PyPI](https://img.shields.io/pypi/v/everychat?color=3fb950)](https://pypi.org/project/everychat/)
@@ -128,19 +130,3 @@ Everything stays on your machine. The database is a plain SQLite file; delete it
 ## License
 
 MIT
-
----
-
-## 中文說明
-
-**把你所有 AI 對話變成可搜尋的記憶。** ChatGPT、Claude、Gemini、Claude Code、Codex 全部進同一個本地索引，免費、離線，而且你的 coding agent 可以透過 MCP 查詢它。
-
-```bash
-uv tool install everychat
-everychat sync                        # 自動索引本機的 Claude Code 與 Codex 對話
-everychat import chatgpt-export.zip   # 匯入 ChatGPT / Claude.ai 匯出檔
-everychat search "上次那個 timezone 的 bug"
-claude mcp add everychat -- everychat mcp   # 讓 Claude Code 能查你的歷史
-```
-
-中文搜尋直接可用，不需要斷詞。所有資料都留在 `~/.everychat`，不會上傳到任何地方。
