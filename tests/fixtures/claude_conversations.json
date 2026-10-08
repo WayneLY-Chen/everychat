@@ -1,0 +1,31 @@
+[
+  {
+    "uuid": "claude-conv-1",
+    "name": "Regex for Taiwanese phone numbers",
+    "created_at": "2026-03-02T08:00:00Z",
+    "updated_at": "2026-03-02T08:05:00Z",
+    "chat_messages": [
+      {
+        "uuid": "m1",
+        "sender": "human",
+        "text": "Write a regex that matches Taiwanese mobile numbers like 0912-345-678.",
+        "created_at": "2026-03-02T08:00:00Z",
+        "content": [{"type": "text", "text": "Write a regex that matches Taiwanese mobile numbers like 0912-345-678."}]
+      },
+      {
+        "uuid": "m2",
+        "sender": "assistant",
+        "text": "",
+        "created_at": "2026-03-02T08:00:30Z",
+        "content": [{"type": "text", "text": "Use ^09\\d{2}-?\\d{3}-?\\d{3}$ and it will accept both forms."}]
+      }
+    ]
+  },
+  {
+    "uuid": "claude-conv-empty",
+    "name": "",
+    "created_at": "2026-03-03T08:00:00Z",
+    "updated_at": "2026-03-03T08:00:00Z",
+    "chat_messages": []
+  }
+]

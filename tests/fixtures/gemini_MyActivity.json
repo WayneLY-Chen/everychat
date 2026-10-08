@@ -1,0 +1,15 @@
+[
+  {
+    "header": "Gemini Apps",
+    "title": "Prompted 幫我把這段英文翻成繁體中文",
+    "time": "2026-05-10T12:34:56.000Z",
+    "products": ["Gemini Apps"],
+    "safeHtmlItem": [{"html": "<p>好的，翻譯如下：</p><p>「<b>天氣</b>很好」</p>"}]
+  },
+  {
+    "header": "Gemini Apps",
+    "title": "Used Gemini Apps",
+    "time": "2026-05-10T12:00:00.000Z",
+    "products": ["Gemini Apps"]
+  }
+]

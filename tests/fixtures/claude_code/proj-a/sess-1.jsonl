@@ -1,0 +1,10 @@
+{"type":"queue-operation","operation":"enqueue","timestamp":"2026-07-31T11:46:05.581Z","sessionId":"sess-1"}
+{"type":"user","isSidechain":false,"message":{"role":"user","content":[{"type":"text","text":"<ide_selection>def foo(): pass</ide_selection>Why does my pytest fixture run twice?"}]},"uuid":"u1","timestamp":"2026-07-31T11:46:05.608Z","cwd":"C:\\work\\proj-a","sessionId":"sess-1"}
+{"type":"ai-title","aiTitle":"Pytest fixture runs twice","sessionId":"sess-1"}
+{"type":"assistant","isSidechain":false,"message":{"role":"assistant","content":[{"type":"thinking","thinking":"secret"}]},"uuid":"a1","timestamp":"2026-07-31T11:46:10.000Z","cwd":"C:\\work\\proj-a","sessionId":"sess-1"}
+{"type":"assistant","isSidechain":false,"message":{"role":"assistant","content":[{"type":"text","text":"Because the fixture has function scope"}]},"uuid":"a2","timestamp":"2026-07-31T11:46:11.000Z","cwd":"C:\\work\\proj-a","sessionId":"sess-1"}
+{"type":"assistant","isSidechain":false,"message":{"role":"assistant","content":[{"type":"tool_use","id":"t1","name":"Bash","input":{"command":"ls"}}]},"uuid":"a3","timestamp":"2026-07-31T11:46:12.000Z","cwd":"C:\\work\\proj-a","sessionId":"sess-1"}
+{"type":"user","isSidechain":false,"message":{"role":"user","content":[{"type":"tool_result","content":"file.py","tool_use_id":"t1"}]},"uuid":"u2","timestamp":"2026-07-31T11:46:13.000Z","cwd":"C:\\work\\proj-a","sessionId":"sess-1"}
+{"type":"assistant","isSidechain":false,"message":{"role":"assistant","content":[{"type":"text","text":"and you request it from two tests."}]},"uuid":"a4","timestamp":"2026-07-31T11:46:14.000Z","cwd":"C:\\work\\proj-a","sessionId":"sess-1"}
+{"type":"user","isMeta":true,"message":{"role":"user","content":"<local-command-caveat>ignored</local-command-caveat>"},"uuid":"u3","timestamp":"2026-07-31T11:46:15.000Z","sessionId":"sess-1"}
+{"type":"user","isSidechain":true,"message":{"role":"user","content":"subagent prompt must be skipped"},"uuid":"u4","timestamp":"2026-07-31T11:46:16.000Z","sessionId":"sess-1"}
