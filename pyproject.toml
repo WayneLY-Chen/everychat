@@ -40,6 +40,17 @@ packages = ["src/everychat"]
 [dependency-groups]
 dev = ["pytest>=8", "ruff>=0.6"]
 
+[tool.uv]
+# fastembed 0.9.0 宣告 pillow<13，但 pillow 12.x 有 35 筆已知漏洞，13.0.0 才修。
+# everychat 只用 TextEmbedding，PIL 只在 import 時被載入、不會解碼任何圖片；
+# 已用相同輸入比對 pillow 12 / 13 的 embedding 結果一致。fastembed 放寬上限後即可移除。
+# pillow 13 需要 Python >= 3.11；3.10 已沒有修補版，維持 fastembed 原本的約束。
+# 注意：這只影響 uv 的解析（本 repo 的 uv.lock），從 PyPI 用 pip 安裝的使用者仍受 fastembed 的上限約束。
+override-dependencies = [
+    "pillow>=13.0.0; python_version >= '3.11'",
+    "pillow>=10.3.0,<13.0; python_version < '3.11'",
+]
+
 [tool.ruff]
 line-length = 100
 target-version = "py310"
